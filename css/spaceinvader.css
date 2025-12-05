@@ -1,0 +1,90 @@
+* {
+    cursor: url('../img/pixelLaser.png'), auto !important;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    background: black;
+    overflow: hidden;
+}
+
+#game {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+#player {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+}
+
+.enemy {
+    position: absolute;
+    width: 50px;
+}
+
+.bullet {
+    position: absolute;
+    width: 10px;
+    height: 20px;
+    background: yellow;
+}
+
+#gameOver {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #1a1a1a;
+    color: #fff;
+    padding: 40px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.7);
+    z-index: 100;
+    font-family: 'Arial', sans-serif;
+    animation: fadeIn 0.5s ease;
+}
+
+#gameOver h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+#gameOver button {
+    background: #ffcc00;
+    border: none;
+    padding: 10px 25px;
+    font-size: 1em;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#gameOver button:hover {
+    background: #ffdd33;
+}
+
+#score {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: white;
+    font-size: 24px;
+    font-family: Arial, sans-serif;
+    z-index: 200;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translate(-50%, -60%); }
+    to { opacity: 1; transform: translate(-50%, -50%); }
+}
