@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="qcm.css" type="text/css" />
+    <link rel="stylesheet" href="./css/qcm.css" type="text/css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
 </head>
@@ -11,7 +11,7 @@
 <body>
     <header>
         <div class="logo">
-            <img src="Decathlon.png" alt="decat">
+            <img src="./img/Decathlon.png" alt="decat">
         </div>
         <div class="header-title">Profil sportif</div>
         <div class="user-icon">👤</div>
@@ -27,60 +27,110 @@
     <div class="qcm-container">
         <h2 style="text-align: center; color: #333;">Questionnaire à Choix Multiples</h2>
 
+    <figure>
+  <figcaption>Générique Décathlon</figcaption>
+  <audio controls src="./audio/generique_decathlon.mp3"></audio>
+    </figure>
+
         <form id="qcmForm">
             <div class="question">
-                <h3>Question 1 : Quel est le langage utilisé pour la structure d'une page web ?</h3>
+                <h3>Question 1 : Quel est votre niveau sportif actuel ?</h3>
                 <div class="options">
                     <div class="option">
                         <input type="checkbox" id="q1a" name="q1" value="a">
-                        <label for="q1a">a. CSS</label>
+                        <label for="q1a">a. Débutant</label>
                     </div>
                     <div class="option">
                         <input type="checkbox" id="q1b" name="q1" value="b">
-                        <label for="q1b">b. HTML</label>
+                        <label for="q1b">b. Intermédiaire</label>
                     </div>
                     <div class="option">
                         <input type="checkbox" id="q1c" name="q1" value="c">
-                        <label for="q1c">c. JavaScript</label>
+                        <label for="q1c">c. Avancé</label>
                     </div>
                 </div>
             </div>
 
             <div class="question">
-                <h3>Question 2 : Quels sont les langages de style pour le web ?</h3>
+                <h3>Question 2 : Quels sports pratiquez-vous régulièrement ?</h3>
                 <div class="options">
                     <div class="option">
                         <input type="checkbox" id="q2a" name="q2" value="a">
-                        <label for="q2a">a. CSS</label>
+                        <label for="q2a">a. Course à pied</label>
                     </div>
                     <div class="option">
                         <input type="checkbox" id="q2b" name="q2" value="b">
-                        <label for="q2b">b. Python</label>
+                        <label for="q2b">b. Musculation</label>
                     </div>
                     <div class="option">
                         <input type="checkbox" id="q2c" name="q2" value="c">
-                        <label for="q2c">c. SASS</label>
+                        <label for="q2c">c. Yoga </label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q2d" name="q2" value="d">
+                        <label for="q2d">d. aucun</label>
                     </div>
                 </div>
             </div>
 
             <div class="question">
-                <h3>Question 3 : Quelles sont les propriétés CSS valides ?</h3>
+                <h3>Question 3 : Quel est votre objectif principal ?</h3>
                 <div class="options">
                     <div class="option">
                         <input type="checkbox" id="q3a" name="q3" value="a">
-                        <label for="q3a">a. background-color</label>
+                        <label for="q3a">a. Améliorer ma posture</label>
                     </div>
                     <div class="option">
                         <input type="checkbox" id="q3b" name="q3" value="b">
-                        <label for="q3b">b. margin</label>
+                        <label for="q3b">b. Renforcer mes muscles</label>
                     </div>
                     <div class="option">
                         <input type="checkbox" id="q3c" name="q3" value="c">
-                        <label for="q3c">c. text-transform</label>
+                        <label for="q3c">c. Entretenir ma santé</label>
                     </div>
                 </div>
             </div>
+            
+            <div class="question">
+                <h3>Question 4 : Quelle est votre fréquence sportive</h3>
+                <div class="options">
+                    <div class="option">
+                        <input type="checkbox" id="q4a" name="q4" value="a">
+                        <label for="q4a">a. 1 fois par jour</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q4b" name="q4" value="b">
+                        <label for="q3b">b. 1 fois par semaine</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q4c" name="q4" value="c">
+                        <label for="q4c">c. 3 fois par semaine</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q4d" name="q4" value="d">
+                        <label for="q4d">d. 1 fois par mois</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question">
+                <h3>Question 5 : Où pratiquez-vous généralement  votre sport ?</h3>
+                <div class="options">
+                    <div class="option">
+                        <input type="checkbox" id="q5a" name="q5" value="a">
+                        <label for="q3a">a. À la maison</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q5b" name="q5" value="b">
+                        <label for="q5b">b. En salle de sport</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q5c" name="q5" value="c">
+                        <label for="q5c">c. En extérieur (parc, forêt, etc…)</label>
+                    </div>
+                </div>
+            </div>
+
 
             <button type="submit" class="submit-btn">Valider mes réponses</button>
         </form>
@@ -88,13 +138,13 @@
         <div id="result" class="result"></div>
     </div>
 
-    <div class="chat-button">💬</div>
+    <div class="chat-button">💬</div> 
 
     <footer>
         <p>Développer par JlreCodege JuAPromejeuje</p>
         <div class="footer-logos">
-            <img src="UlcoInfo.png" alt="Info">
-            <img src="Jrcandev.png" alt="JrCanDev">
+            <img src="./img/UlcoInfo.png" alt="Info">
+            <img src="./img/Jrcandev.png" alt="JrCanDev">
         </div>
     </footer>
 
