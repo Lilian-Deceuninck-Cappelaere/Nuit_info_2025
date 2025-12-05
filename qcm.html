@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="qcm.css" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="Decathlon.png" alt="decat">
+        </div>
+        <div class="header-title">Profil sportif</div>
+        <div class="user-icon">👤</div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a>Accueil</a></li>
+            <li><a>profil sportif</a></li>
+        </ul>
+    </nav>
+
+    <div class="qcm-container">
+        <h2 style="text-align: center; color: #333;">Questionnaire à Choix Multiples</h2>
+
+        <form id="qcmForm">
+            <div class="question">
+                <h3>Question 1 : Quel est le langage utilisé pour la structure d'une page web ?</h3>
+                <div class="options">
+                    <div class="option">
+                        <input type="checkbox" id="q1a" name="q1" value="a">
+                        <label for="q1a">a. CSS</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q1b" name="q1" value="b">
+                        <label for="q1b">b. HTML</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q1c" name="q1" value="c">
+                        <label for="q1c">c. JavaScript</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question">
+                <h3>Question 2 : Quels sont les langages de style pour le web ?</h3>
+                <div class="options">
+                    <div class="option">
+                        <input type="checkbox" id="q2a" name="q2" value="a">
+                        <label for="q2a">a. CSS</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q2b" name="q2" value="b">
+                        <label for="q2b">b. Python</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q2c" name="q2" value="c">
+                        <label for="q2c">c. SASS</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question">
+                <h3>Question 3 : Quelles sont les propriétés CSS valides ?</h3>
+                <div class="options">
+                    <div class="option">
+                        <input type="checkbox" id="q3a" name="q3" value="a">
+                        <label for="q3a">a. background-color</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q3b" name="q3" value="b">
+                        <label for="q3b">b. margin</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q3c" name="q3" value="c">
+                        <label for="q3c">c. text-transform</label>
+                    </div>
+                </div>
+            </div>
+
+            <button type="submit" class="submit-btn">Valider mes réponses</button>
+        </form>
+
+        <div id="result" class="result"></div>
+    </div>
+
+    <div class="chat-button">💬</div>
+
+    <footer>
+        <p>Développer par JlreCodege JuAPromejeuje</p>
+        <div class="footer-logos">
+            <img src="UlcoInfo.png" alt="Info">
+            <img src="Jrcandev.png" alt="JrCanDev">
+        </div>
+    </footer>
+
+</body>
+
+</html>
