@@ -8,6 +8,10 @@
     }
 }
 
+* {
+    cursor: url('assets/images/pixelLaser.png'), auto !important;
+}
+
 body {
     font-family: Arial;
     font-size: 15px;

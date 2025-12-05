@@ -80,7 +80,7 @@ function update() {
         score += 1;
         scoreEl.textContent = "Score : " + score;
         placeFood();
-        if (score >= 15) return winGame();
+        if (score >= 10) return winGame();
     } else {
         snake.pop();
     }
@@ -92,7 +92,7 @@ function winGame() {
     clearInterval(gameInterval);
     document.querySelector('#gameOver h2').textContent = "Victoire ! Score : " + score;
     gameOver.style.display = 'block';
-    restartBtn.onclick = () => location.reload();
+    suitebutton.onclick = () => location.reload();
 }
 
 // popup fin de partie
