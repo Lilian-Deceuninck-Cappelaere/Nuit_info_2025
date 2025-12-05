@@ -6,7 +6,6 @@
           <div class="footer-logos">
               <a href="https://www.iut-littoral.fr/"><img src="assets/images/iutlittoral-logo.jpg" alt="Info Calais" class="logo-info"></a>
               <a href="https://www.jrcan.dev/"><img src="assets/images/logo_JrCanDev.png" alt="JrCanDev" class="logo-jrcandev"></a>
-
           </div>
       </div>
   </footer>

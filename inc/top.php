@@ -12,9 +12,9 @@
     <div class="image-container">
         <img src="https://via.placeholder.com/800x400/333/ccc?text=Illustration+NIRD" alt="Illustration du projet">
     </div>
-
-    <button class="game-btn">
+    <a href="qcm.html"><button class="game-btn">
         Démarrer le jeu de piste
-    </button>
+    </button></a>
+    
 
 </main>
